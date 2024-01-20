@@ -1,12 +1,4 @@
-Given five files,
-
-- `EmployeeController.java`
-- `EmployeeRepository.java`
-- `EmployeeH2Service.java`
-- `EmployeeRowMapper.java`
-- `Employee.java`
-
-And also given a database file `employees` which contains `EMPLOYEELIST` table.
+database contains `EMPLOYEELIST` table.
 
 #### EMPLOYEELIST Table
 
@@ -20,12 +12,12 @@ And also given a database file `employees` which contains `EMPLOYEELIST` table.
 
 <SingleLineNote>
 
-Use only PLAYLIST as a table name in your code while writing queries.
+Use only EmployeeList as a table name in your code while writing queries.
 </SingleLineNote>
 
 ### Completion Instructions
 
-- `Employee.java`: `Employee` class should contain the following attributes.
+- `Employee.java`: `Employee` class contain the following attributes.
 
     |  Attribute   |  Type  |
     | :----------: | :----: |
@@ -34,12 +26,12 @@ Use only PLAYLIST as a table name in your code while writing queries.
     |    email     | String |
     |  department  | String |
 
-- `EmployeeRepository.java`: Create an `interface` containing required methods.
-- `EmployeeH2Service.java`: Update the service class with logic for managing employee data.
-- `EmployeeController.java`: Create the controller class to  handle HTTP requests. 
-- `EmployeeRowMapper.java`: Create a class which implements the `Rowmapper Interface`.
+- `EmployeeRepository.java`: an `interface` containing required methods.
+- `EmployeeH2Service.java`: the service class with logic for managing employee data.
+- `EmployeeController.java`: the controller class to  handle HTTP requests. 
+- `EmployeeRowMapper.java`: class which implements the `Rowmapper Interface`.
 
-Implement the following APIs.
+the following APIs are implemented.
 
 ### API 1
 
@@ -157,6 +149,3 @@ Updates the details of a employee in the `employeeList` based on the `employeeId
 #### Description:
 
 Deletes a employee from the `employeeList`  based on the `employeeId`. 
-
-
-**Do not modify the code in `EmployeeApplication.java`**
